@@ -27,8 +27,8 @@ public:
     void setFollowedCount( int nFollowedCount){followedCount = nFollowedCount;}
     void addFollower(T user);
     void addFollowed(T user);
-    T displayFollower();
-    T displayFollowed();
+    void displayFollower();
+    void displayFollowed();
 
 
 protected:

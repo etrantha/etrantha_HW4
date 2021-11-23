@@ -21,26 +21,26 @@ void SocialMediaAccount<T>::addFollowed(T user) {
 }
 
 template<class T>
-T SocialMediaAccount<T>::displayFollower() {
+void SocialMediaAccount<T>::displayFollower() {
     if(privacy == false)
         cout<<"account is protected and we can't see the requested information"<<endl;
     else{
         cout<<"Followers: "<<endl;
         for (int i; i < maxFollowers; i++)
             cout<<followers[i]<<endl;}
-    return nullptr;
+    return;
 
 }
 
 template<class T>
-T SocialMediaAccount<T>::displayFollowed() {
+void SocialMediaAccount<T>::displayFollowed() {
     if(privacy == false)
         cout<<"account is protected and we can't see the requested information"<<endl;
     else{
         cout<<"AccountHandler: "<<endl;
         for (int i; i < maxFollowed; i++)
             cout<<followed[i]<<endl;}
-    return nullptr;
+    return;
 }
 
 

@@ -2,9 +2,11 @@
  * Author   : Eric Trantham
  * Program  :HW4
  * Date Created :  Nov 20
- * Date Last Modified :Nov 22
+ * Date Last Modified :Nov 23
  * Problem: I'm lost as to why my contructors aren't working for Profile, I've tried so many things it's a bit of a mess now
- * For some reason my program seems to be ending in the first function. It's 11:50, I gotta hand something in. I'm going
+ * For some reason my program seems to be ending in the first function Update:I don't know where I got the idea that the data
+ * type for the display funtion needed to be T, I re-read the assignment and finally relized that wasn't the case and changed it to void.
+ * . It's 11:50, I gotta hand something in. I'm going
  * to update my github though for what it's worth.
  */
 
@@ -14,7 +16,7 @@
 #include "Twitter.cpp"
 #include "Instagram.h"
 #include "Instagram.cpp"
-#include "SocialMediaAccount.cpp" //this error wasted a lot of my time 
+#include "SocialMediaAccount.cpp" //this error wasted a lot of my time
 #include "SocialMediaAccount.h"
 
 using namespace std;
