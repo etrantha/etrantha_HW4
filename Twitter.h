@@ -14,13 +14,13 @@ using std::endl;
 template<class T>
 class Twitter: public SocialMediaAccount<T> {
 public:
-    Twitter(): SocialMediaAccount<T>(){}
-    Twitter(T newHandler): SocialMediaAccount<T>(newHandler){}
-    Twitter(string username, int nUserID): SocialMediaAccount<T>(username, nUserID){}
+    Twitter(): retweetCount(0), SocialMediaAccount<T>(){}
+    Twitter(T newHandler):retweetCount(0), SocialMediaAccount<T>(newHandler){}
+    Twitter(string username, int nUserID):retweetCount(0), SocialMediaAccount<T>(username, nUserID){}
     Twitter(T newHandler, bool nbool, int nfollowers, int nfollowed): retweetCount(0), SocialMediaAccount<T>(newHandler, nbool, nfollowers, nfollowed){}
     void setRetweetCount(int nRetweetCount){retweetCount = nRetweetCount;}
     int getRetweetCount(){return retweetCount;}
-    void RT(){cout<<"You retweeted"<<endl;retweetCount++;}
+    void RT(){cout<<"You retweeted: "<<retweetCount<<endl;retweetCount++;}
     T displayRT();
 
 protected:

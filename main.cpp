@@ -57,7 +57,9 @@ int main() {
     TS.addFollowed("Gollum");
     TS.addFollowed("Sauron");
     TS.displayFollowed();
-
+    TS.setRetweetCount(10);
+    TS.RT();
+    TS.displayRT();
 
 
 
